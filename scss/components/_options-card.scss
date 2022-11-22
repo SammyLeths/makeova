@@ -1,0 +1,25 @@
+@use '../custom' as *;
+
+.options {
+  .card {
+    border: none;
+    border-radius: 0;
+
+    .card-body {
+      padding: 2rem;
+
+      .card-title {
+        font-weight: 600;
+        margin-bottom: 1rem;
+      }
+
+      .card-meta {
+        font-size: 0.8rem;
+      }
+
+      .card-text {
+        margin-bottom: 1.8rem;
+      }
+    }
+  }
+}

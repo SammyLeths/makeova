@@ -1,0 +1,97 @@
+@use '../custom' as *;
+
+.mb-modal {
+  width: 45%;
+  max-width: 60%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f3f3f3;
+  padding: 3.5rem 3.5rem;
+  box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.3);
+  z-index: 1050;
+  transition: all 0.5s;
+
+  @include media-breakpoint-down(xl) {
+    width: 75%;
+    max-width: 80%;
+  }
+
+  @include media-breakpoint-down(md) {
+    width: 90%;
+    max-width: 100%;
+    padding: 2rem 2rem;
+  }
+
+  .btn--close-modal {
+    font-family: inherit;
+    color: inherit;
+    position: absolute;
+    top: 0.1rem;
+    right: 1rem;
+    font-size: 2.5rem;
+    cursor: pointer;
+    border: none;
+    background: none;
+  }
+
+  &__header {
+    font-size: 1.7rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+    font-weight: 700;
+  }
+
+  &__body {
+    .nav {
+      .nav-item {
+        .nav-link {
+          font-weight: 700;
+          border: none;
+          border-radius: 0;
+        }
+
+        .nav-link.active {
+          background-color: $white !important;
+        }
+      }
+    }
+
+    .tab-content {
+      background-color: $white;
+      padding: 2rem;
+
+      input {
+        border-radius: 0;
+      }
+    }
+
+    form {
+      input,
+      select,
+      textarea {
+        border-radius: 0;
+      }
+    }
+  }
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  z-index: 1030;
+  transition: all 0.5s;
+}
+
+.mb-hidden {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+}

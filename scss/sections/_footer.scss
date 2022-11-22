@@ -1,0 +1,86 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+.footer {
+  @include media-breakpoint-down(sm) {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .lead {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    font-weight: 500;
+  }
+
+  &__logo {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  &__col {
+    &--headline {
+      opacity: 1;
+      margin-top: 0.5rem;
+    }
+
+    p {
+      font-size: 0.7rem;
+    }
+
+    &--copyright {
+      font-weight: 600;
+    }
+
+    &--links {
+      list-style: none;
+      padding-left: 0;
+
+      li {
+        margin-bottom: 0.8rem;
+
+        a {
+          font-size: 0.9rem;
+          text-decoration: none;
+          font-weight: 600;
+        }
+      }
+    }
+
+    .tos {
+      li {
+        a {
+          font-weight: 400;
+          font-size: 0.7rem;
+        }
+      }
+    }
+
+    &--credit {
+      @include media-breakpoint-down(lg) {
+        text-align: center;
+      }
+
+      a {
+      }
+    }
+  }
+}
+
+// BACK TO TOP BUTTON
+
+.back-to-top {
+  position: fixed;
+  width: 3rem;
+  height: 3rem;
+  right: 1.875rem;
+  bottom: 1.875rem;
+  z-index: 9999;
+
+  i {
+    color: $white;
+    font-size: 1rem;
+    @include absoluteCenter;
+  }
+}

@@ -1,0 +1,89 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+.hero {
+  height: 100%;
+  margin-top: -4.6rem;
+
+  @include media-breakpoint-down(lg) {
+    margin-top: -4.7rem;
+  }
+
+  @include media-breakpoint-down(lg) {
+    padding-top: 4.7rem;
+  }
+
+  @include media-breakpoint-down(sm) {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  &__intros {
+    &--ctas {
+      @include media-breakpoint-down(lg) {
+        margin-bottom: 2.5rem;
+      }
+
+      .video-box {
+        position: relative;
+        margin-left: 3rem;
+
+        a {
+          span {
+            i {
+              font-size: 3.5rem;
+              color: $green-300;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .border-animation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3.5rem;
+    height: 3.5rem;
+    border: 0.55rem solid $green-300;
+    border-radius: 50%;
+    animation: pulse-border 1.5s linear infinite;
+
+    &--border-1 {
+      animation-delay: 1s;
+    }
+
+    &--border-2 {
+      animation-delay: 1.5s;
+    }
+  }
+
+  &__feat-images {
+    padding-bottom: 6rem;
+  }
+
+  &--image1 {
+    max-width: 25rem;
+    animation: hero_image_slide 0.8s ease-in-out;
+
+    @include media-breakpoint-down(lg) {
+      margin-top: 0;
+    }
+
+    @include media-breakpoint-down(sm) {
+      max-width: 18rem;
+    }
+  }
+
+  &--image2 {
+    position: relative;
+    max-width: 24rem;
+    margin-top: -10rem;
+    animation: hero_image_slide 1.3s ease-in-out;
+
+    @include media-breakpoint-down(sm) {
+      max-width: 14rem;
+    }
+  }
+}

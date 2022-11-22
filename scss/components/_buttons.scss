@@ -1,0 +1,46 @@
+@use '../custom' as *;
+
+.btn-flat {
+  position: relative;
+  padding: 1.5rem 2rem;
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+  color: $white;
+}
+
+.btn-sm {
+  display: block;
+  padding: 1rem 2rem;
+}
+
+.btn-outline {
+  background-color: transparent;
+  padding: 1rem 2rem;
+}
+
+.btn-outline--dark {
+  color: $dark;
+  border-color: $dark;
+}
+
+// THEME SWITCHERS BUTTON
+
+.btn--theme-switcher {
+  border: none;
+  padding: 0.5rem 1rem;
+  color: $white;
+}
+
+.btn--theme-switcher.btnsm {
+  @include media-breakpoint-down(lg) {
+    padding: 0.2rem 0.6rem;
+  }
+}
+
+.btn--color {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  border: none;
+}

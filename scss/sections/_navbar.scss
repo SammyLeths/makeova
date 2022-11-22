@@ -1,0 +1,106 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+.menu {
+  .container {
+    .navbar-brand,
+    .offcanvas-title {
+      font-size: 1.3rem;
+    }
+
+    li {
+      margin: 0 0.3rem;
+
+      @include media-breakpoint-down(xl) {
+        margin: 0 0.1rem;
+      }
+
+      @include media-breakpoint-down(lg) {
+        margin: 0 0.3rem;
+      }
+
+      a {
+        font-size: 0.9rem;
+
+        &:hover {
+          font-weight: 700;
+        }
+      }
+
+      .active {
+        font-weight: 700;
+      }
+
+      @include media-breakpoint-down(lg) {
+        margin: 0;
+      }
+    }
+
+    .btn-flat {
+      @include media-breakpoint-up(lg) {
+        font-size: 0.9rem;
+      }
+    }
+
+    // THEME SWITCHERS
+
+    .theme-switcher {
+      &__color-picker {
+        .dropdown-menu {
+          position: absolute;
+          border-radius: 0;
+          border-left: 0;
+          border-right: 0;
+          border-bottom: 0;
+          min-width: 7rem;
+          margin-top: 0.5rem;
+
+          .color-box {
+            padding: 0.4rem 1.5rem;
+            display: flex;
+            gap: 1rem;
+            width: -moz-fit-content;
+            width: fit-content;
+            margin-inline: auto;
+
+            .btn--color.primary-theme {
+              background-color: $primary;
+
+              &:hover {
+                background-color: $primary-300;
+              }
+            }
+
+            .btn--color.secondary-theme {
+              background-color: $secondary;
+
+              &:hover {
+                background-color: $secondary-300;
+              }
+            }
+
+            .btn--color.primary-theme.theme-active {
+              box-shadow: 0 0 0 2px #fff, 0 0 0 4px $primary;
+            }
+
+            .btn--color.secondary-theme.theme-active {
+              box-shadow: 0 0 0 2px #fff, 0 0 0 4px $secondary;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.light-mode {
+  @include light-mode;
+}
+
+.gray-mode {
+  @include gray-mode;
+}
+
+.dark-mode {
+  @include dark-mode;
+}

@@ -1,0 +1,44 @@
+@use '../custom' as *;
+
+.options {
+  padding: 5rem 0;
+
+  .display-4 {
+    font-weight: 500;
+    margin-bottom: 6rem;
+
+    @include media-breakpoint-down(sm) {
+      margin-bottom: 1rem;
+    }
+  }
+
+  .options-card-wrapper {
+    width: 68%;
+
+    @include media-breakpoint-down(xl) {
+      width: 85%;
+    }
+
+    @include media-breakpoint-down(lg) {
+      width: 90%;
+    }
+  }
+
+  &__card {
+    &--1 {
+      margin-top: -5rem !important;
+
+      @include media-breakpoint-down(sm) {
+        margin-top: 0 !important;
+      }
+    }
+
+    &--3 {
+      margin-top: -5rem !important;
+
+      @include media-breakpoint-down(sm) {
+        margin-top: 0 !important;
+      }
+    }
+  }
+}

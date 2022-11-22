@@ -1,0 +1,33 @@
+@use '../custom' as *;
+
+.process {
+  padding: 7rem 0 10rem 0;
+
+  @include media-breakpoint-down(sm) {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  &__headline-wrapper {
+    width: 70%;
+
+    @include media-breakpoint-down(xl) {
+      width: 95%;
+    }
+
+    .display-3--title {
+      @include media-breakpoint-down(lg) {
+        font-size: 2.5rem;
+        line-height: 2.8rem;
+      }
+    }
+  }
+
+  &__intro-wrapper {
+    width: 80%;
+
+    @include media-breakpoint-down(xl) {
+      width: 100%;
+    }
+  }
+}

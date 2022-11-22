@@ -1,0 +1,40 @@
+// MAKEOVA THEME COLORS
+$green: #165a4a;
+$green-300: #82b9ae;
+$green-100: #eaf1f0;
+
+$spanish-gray: #989898;
+$spanish-gray-300: #cccccc;
+$spanish-gray-100: #e6e6e6;
+
+// WHITE AND GRAY COLORS
+$white: #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black: #000;
+
+$primary: $green;
+$primary-300: $green-300;
+$primary-100: $green-100;
+
+$secondary: $spanish-gray;
+$secondary-300: $spanish-gray-300;
+$secondary-100: $spanish-gray-100;
+
+$theme-dark: $gray-900;
+$theme-dark-500: $gray-700; // replace primary background color
+$theme-dark-300: $gray-500; // Hover color - replaces primary-300
+$theme-dark-100: $gray-200; // Light bg - replaces primary-100
+
+// GLOBAL FONT FAMILY
+$font-family-sans-serif: 'Montserrat', sans-serif;
+
+// IMPORT BOOTSTRAP v5.2
+@import '../node_modules/bootstrap/scss/bootstrap.scss';

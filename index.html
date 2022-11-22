@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+  <link rel="stylesheet" href="assets/css/fontawesome.css">
+  <link rel="stylesheet" href="assets/css/bootstrap-icons.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <title>Makeova</title>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#spy-section">
+
+  <!-- START THE NAVBAR SECTION -->
+
+  <nav class="navbar navbar-expand-lg bg-transparent sticky-top border-bottom border-primary p-lg-0 p-3 menu"
+    id="spy-section">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-primary pe-4" href="#">makeova</a>
+
+      <!-- COLOR SWITCHER ON MOBILE SCREEN ONLY -->
+
+      <div
+        class="theme-switcher switcher-sm d-flex align-items-center justify-content-center d-lg-none ms-auto me-3 me-md-4">
+        <button class="btn--theme-switcher btnsm me-2 light-dark-btn">
+          <i class="fas fa-moon light-dark-icon"></i>
+        </button>
+        <div class="dropdown theme-switcher__color-picker">
+          <button class="btn--theme-switcher btnsm dropdown-toggle color-toggle-btn" type="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fas fa-palette"></i>
+          </button>
+          <div class="dropdown-menu dropdown-menu-end shadow-lg">
+            <div class="color-box">
+              <button class="btn--color primary-theme"></button>
+              <button class="btn--color secondary-theme"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title fw-bold text-primary" id="offcanvasNavbarLabel">makeova</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-start flex-grow-1">
+            <li class="nav-item my-auto">
+              <a class="nav-link" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item my-auto">
+              <a class="nav-link" aria-current="page" href="#process">Process</a>
+            </li>
+            <li class="nav-item my-auto">
+              <a class="nav-link" href="#testimonial">Reviews</a>
+            </li>
+            <li class="nav-item my-auto">
+              <a class="nav-link" href="#options">Options</a>
+            </li>
+            <li class="nav-item my-auto">
+              <a class="nav-link" href="#gallery">Gallery</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav justify-content-end flex-grow-1">
+            <li class="nav-item my-auto me-lg-4 me-0">
+              <a class="nav-link btn--show-modal" id="login-signup" href="#">Begin</a>
+            </li>
+            <div
+              class="theme-switcher me-lg-4 me-0 d-flex align-items-center justify-content-center order-2 order-lg-1 mt-4 mt-lg-0">
+              <button class="btn--theme-switcher me-2 light-dark-btn">
+                <i class="fas fa-moon light-dark-icon"></i>
+              </button>
+              <div class="dropdown theme-switcher__color-picker">
+                <button class="btn--theme-switcher dropdown-toggle color-toggle-btn" type="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="fas fa-palette"></i>
+                </button>
+                <div class="dropdown-menu dropdown-menu-end shadow-lg">
+                  <div class="color-box">
+                    <button class="btn--color primary-theme"></button>
+                    <button class="btn--color secondary-theme"></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="btn-flat mt-4 mt-lg-0 btn--show-modal order-1 order-lg-2" id="get-estimate">Get your
+              estimate</button>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- START THE HERO SECTION -->
+
+  <section class="hero section" id="home">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-lg-6 my-auto hero__intros pt-5 pt-xl-4">
+          <h1 class="display-2">Renovations simplified.</h1>
+          <p class="display-2--description">A stramlined platform to design, plan, and build - all in one place
+          </p>
+          <div class="hero__intros--ctas d-flex align-items-center">
+            <button class="btn-flat btn-sm btn--show-modal" id="get-estimate">Get your estimates</button>
+            <div class="video-box">
+              <a href="#" class="glightbox">
+                <span>
+                  <i class="fas fa-play-circle"></i>
+                </span>
+                <span class="border-animation border-animation--border-1"></span>
+                <span class="border-animation border-animation--border-2"></span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-lg-6 hero__feat-images">
+          <img src="images/hero/hero-image-1.png" alt="hero 1" class="hero--image1 img-fluid">
+          <img src="images/hero/hero-image-2.png" alt="hero 2" class="hero--image2 float-end me-0 me-xl-5 img-fluid">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- START THE FEATURED IN SECTION -->
+
+  <section class="featured-in px-3 px-md-0 section" id="featured-in">
+    <div class="container">
+      <div class="row text-center py-5">
+        <div class="col-sm-6 col-lg-3 mb-xl-0 mb-5">
+          <div class="featured-in__company-logo-wrapper d-flex align-items-center justify-content-center">
+            <img src="images/featuted-in/Press01.png" alt="houzz" class="">
+          </div>
+          <div class="featured-in__company-text">
+            <p class="mb-0">"makeova is here to simplify the process. Lorem ipsum dolor, sit amet consectetur."</p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3 mb-xl-0 mb-5">
+          <div class="featured-in__company-logo-wrapper d-flex align-items-center justify-content-center">
+            <img src="images/featuted-in/Press02.png" alt="fc" class="">
+          </div>
+          <div class="featured-in__company-text">
+            <p class="mb-0">"In addition to getting a contractor, you're also getting the eye of a design."
+            </p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3 mb-md-0 mb-5">
+          <div class="featured-in__company-logo-wrapper d-flex align-items-center justify-content-center">
+            <img src="images/featuted-in/Press03.png" alt="new york times" class="">
+          </div>
+          <div class="featured-in__company-text">
+            <p class="mb-0">"Streamlining timely aspects like layout, materials selection, and building approvals"</p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3 mb-xl-0 mb-lg-5">
+          <div class="featured-in__company-logo-wrapper d-flex align-items-center justify-content-center">
+            <img src="images/featuted-in/Press04.png" alt="chinese" class="">
+          </div>
+          <div class="featured-in__company-text">
+            <p class="mb-0">“This startup is on a mission to make home renovations easier Lorem ipsum dolor"
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- START THE PROCESS SECTION -->
+
+  <section class="process section" id="process">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-md-6">
+          <div class="process__headline-wrapper me-auto">
+            <h3 class="display-3--title text-white mb-5 mb-lg-1">A simple and streamlined process</h3>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="process__intro-wrapper ms-auto pe-3">
+            <p class="display-3--intro text-white lead pb-3">
+              Use our tools to plan, design, and build your renovation with the industry's top designers and
+              contractors.
+            </p>
+            <a href="#options" class="display-3--link text-white fw-bold">How does it work?</a>
+          </div>
+        </div>
+      </div>
+      <div class="row gx-sm-5">
+        <div class="col-xl-4 col-md-6 mb-5 mb-xl-0">
+          <div class="process__card">
+            <div class="process__card__imgwrap">
+              <img class="process__card__imgwrap--image img-fluid" src="images/process/Process 01.png" alt="Process 01">
+              <span>01</span>
+            </div>
+            <div class="process__card__body">
+              <h5 class="process__card__body--title">Plan</h5>
+              <p class="process__card__body--text">Work with a Block Project Planner to receive a custom proposal
+                tailored to your renovation goals with a detailed scope of work that aligns with the provided project
+                brief.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-md-6 mb-5 mb-xl-0">
+          <div class="process__card">
+            <div class="process__card__imgwrap">
+              <img class="process__card__imgwrap--image img-fluid" src="images/process/Process 02.png" alt="Process 02">
+              <span>02</span>
+            </div>
+            <div class="process__card__body">
+              <h5 class="process__card__body--title">Design</h5>
+              <p class="process__card__body--text">Use our curated design system and access our in-house designers to
+                bring
+                your space to life. We’ll order the materials and prepare your renovation for the day of break ground.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-md-6">
+          <div class="process__card">
+            <div class="process__card__imgwrap">
+              <img class="process__card__imgwrap--image img-fluid" src="images/process/Process 03.png" alt="Process 03">
+              <span>03</span>
+            </div>
+            <div class="process__card__body">
+              <h5 class="process__card__body--title">Build</h5>
+              <p class="process__card__body--text">We’ve built relationships with the best, local contractors in your
+                area.
+                They’re 100% licensed and insured–and they’ll provide milestone updates throughout the build.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- START THE TESTIMONIAL SECTION -->
+
+  <section class="testimonial section" id="testimonial">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <img src="images/testimonial/testimonial-featured.png" alt="testimonial featured"
+            class="img-fluid testimonial__featured mb-4 mb-md-0">
+        </div>
+        <div class="col-md-6 my-auto">
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="testimonial__card">
+                  <div class="ratings">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star"></i>
+                  </div>
+                  <p class="testimonial__card--text">
+                    Makeova matched me to a great contractor who was able to renovate my kitchen while I lived at home
+                    during the pandemic.
+                  </p>
+                  <div class="testimonial__card--name">
+                    <p>— Linda R.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="testimonial__card">
+                  <div class="ratings">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi bi-star-half"></i>
+                    <i class="bi bi-star"></i>
+                  </div>
+                  <p class="testimonial__card--text">
+                    We have worked with many contractors over the last 20 years and Makeova by far is the best. The
+                    quality of the work was outstanding.
+                  </p>
+                  <div class="testimonial__card--name">
+                    <p>— Veronica S.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="testimonial__card">
+                  <div class="ratings">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+                  <p class="testimonial__card--text">
+                    The company is very customer service oriented and the communication was excellent! There were people
+                    working every day.
+                  </p>
+                  <div class="testimonial__card--name">
+                    <p>— Adams T.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="testimonial__btn bi bi-arrow-left" type="button" data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="prev">
+            </button>
+            <button class="testimonial__btn bi bi-arrow-right" type="button" data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="next">
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="row pt-5">
+        <div class="col-md-12 text-center">
+          <button class="btn-outline btn-outline--dark btn--show-modal" id="get-estimate">Get your estimate</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- START THE MIDDLE CTA SECTION -->
+
+  <section class="middle-cta section" id="middle-cta">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-m-12">
+          <div class="middle-cta__wrapper d-flex align-items-center justify-content-center mx-auto">
+            <h1 class="display-3">Renovate your home as low as 0% APR</h1>
+            <button class="btn-flat btn-sm btn--show-modal" id="login-signup">Explore financing</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- START THE OPTIONS SECTION -->
+
+  <section class="options section" id="options">
+    <div class="container">
+      <div class="row mb-5 text-center">
+        <div class="col-md-12">
+          <h3 class="display-4">Our Options</h3>
+        </div>
+      </div>
+      <div class="options-card-wrapper mx-auto">
+        <div class="row g-5">
+          <div class="col-md-6" id="bathroom">
+            <div class="card options__card--1 m-xl-2">
+              <img src="images/options/Options 01.png" class="card--image options__card--image" alt="Bathroom">
+              <div class="card-body options__card__body">
+                <h4 class="card-title options__card__body--title">Bathroom</h4>
+                <p class="card-meta">4 WEEKS TO BUILD</p>
+                <p class="card-text options__card__body">Build your dream bathroom with premium fixtures and finishes.
+                </p>
+                <button class="btn-flat btn-sm btn--show-modal" id="get-estimate">Learn more</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6" id="kitchen">
+            <div class="card options__card--2 m-xl-2">
+              <img src="images/options/Options 02.png" class="card--image options__card--image" alt="Kitchen">
+              <div class="card-body options__card__body">
+                <h4 class="card-title options__card__body--title">Kitchen</h4>
+                <p class="card-meta">6 WEEKS TO BUILD</p>
+                <p class="card-text options__card__body">Create your ideal kitchen with quality, lasting materials.</p>
+                <button class="btn-flat btn-sm btn--show-modal" id="get-estimate">Learn more</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6" id="backyard">
+            <div class="card options__card--3 m-xl-2">
+              <img src="images/options/Options 03.png" class="card--image options__card--image" alt="Backyard">
+              <div class="card-body options__card__body">
+                <h4 class="card-title options__card__body--title">Backyard</h4>
+                <p class="card-meta">5 WEEKS TO BUILD</p>
+                <p class="card-text options__card__body">Create your backyard getaway with durable materials and
+                  beautiful finishes.
+                </p>
+                <button class="btn-flat btn-sm btn--show-modal" id="get-estimate">Learn more</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6" id="basement">
+            <div class="card options__card--4 m-xl-2">
+              <img src="images/options/Options 04.png" class="card--image options__card--image" alt="Basement">
+              <div class="card-body options__card__body">
+                <h4 class="card-title options__card__body--title">Basement</h4>
+                <p class="card-meta">7 WEEKS TO BUILD</p>
+                <p class="card-text options__card__body">Create your backyard getaway with durable materials and
+                  beautiful finishes.</p>
+                <button class="btn-flat btn-sm btn--show-modal" id="get-estimate">Learn more</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- START THE GALLERY SECTION -->
+
+  <section class="gallery section" id="gallery">
+    <div class="container">
+      <div class="row gallery__wrapper">
+        <div class="col-md-12 col-lg-6 order-2 order-lg-1">
+          <div class="gallery__wrapper__images">
+            <div class="row g-3 g-md-4 scroller" data-masonry='{"percentPosition": true }'>
+              <div class="col-6">
+                <div class="gallery__wrapper__images__box">
+                  <img src="images/gallery/image-1.png" alt="Gallery Image" class="">
+                  <div class="gallery-box-info">
+                    <div class="caption">
+                      <a href="images/gallery/image-1.png" class="glightbox1">
+                        <i class="fas fa-magnifying-glass"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="gallery__wrapper__images__box">
+                  <img src="images/gallery/image-2.png" alt="Gallery Image" class="">
+                  <div class="gallery-box-info">
+                    <div class="caption">
+                      <a href="images/gallery/image-2.png" class="glightbox1">
+                        <i class="fas fa-magnifying-glass"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="gallery__wrapper__images__box">
+                  <img src="images/gallery/image-3.png" alt="Gallery Image" class="">
+                  <div class="gallery-box-info">
+                    <div class="caption">
+                      <a href="images/gallery/image-3.png" class="glightbox1">
+                        <i class="fas fa-magnifying-glass"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="gallery__wrapper__images__box">
+                  <img src="images/gallery/image-4.png" alt="Gallery Image" class="">
+                  <div class="gallery-box-info">
+                    <div class="caption">
+                      <a href="images/gallery/image-4.png" class="glightbox1">
+                        <i class="fas fa-magnifying-glass"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="gallery__wrapper__images__box">
+                  <img src="images/gallery/image-5.png" alt="Gallery Image" class="">
+                  <div class="gallery-box-info">
+                    <div class="caption">
+                      <a href="images/gallery/image-5.png" class="glightbox1">
+                        <i class="fas fa-magnifying-glass"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="gallery__wrapper__images__box">
+                  <img src="images/gallery/image-6.png" alt="Gallery Image" class="">
+                  <div class="gallery-box-info">
+                    <div class="caption">
+                      <a href="images/gallery/image-6.png" class="glightbox1">
+                        <i class="fas fa-magnifying-glass"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="gallery__wrapper__images__box">
+                  <img src="images/gallery/image-1.png" alt="Gallery Image" class="">
+                  <div class="gallery-box-info">
+                    <div class="caption">
+                      <a href="images/gallery/image-1.png" class="glightbox1">
+                        <i class="fas fa-magnifying-glass"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="gallery__wrapper__images__box">
+                  <img src="images/gallery/image-2.png" alt="Gallery Image" class="">
+                  <div class="gallery-box-info">
+                    <div class="caption">
+                      <a href="images/gallery/image-2.png" class="glightbox1">
+                        <i class="fas fa-magnifying-glass"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="gallery__wrapper__images__box">
+                  <img src="images/gallery/image-3.png" alt="Gallery Image" class="">
+                  <div class="gallery-box-info">
+                    <div class="caption">
+                      <a href="images/gallery/image-3.png" class="glightbox1">
+                        <i class="fas fa-magnifying-glass"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="gallery__wrapper__images__box">
+                  <img src="images/gallery/image-4.png" alt="Gallery Image" class="">
+                  <div class="gallery-box-info">
+                    <div class="caption">
+                      <a href="images/gallery/image-4.png" class="glightbox1">
+                        <i class="fas fa-magnifying-glass"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="gallery__wrapper__images__box">
+                  <img src="images/gallery/image-5.png" alt="Gallery Image" class="">
+                  <div class="gallery-box-info">
+                    <div class="caption">
+                      <a href="images/gallery/image-5.png" class="glightbox1">
+                        <i class="fas fa-magnifying-glass"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="gallery__wrapper__images__box">
+                  <img src="images/gallery/image-6.png" alt="Gallery Image" class="">
+                  <div class="gallery-box-info">
+                    <div class="caption">
+                      <a href="images/gallery/image-6.png" class="glightbox1">
+                        <i class="fas fa-magnifying-glass"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12 col-lg-6 order-1 order-lg-2">
+          <div class="gallery__wrapper--cta d-flex align-items-center justify-content-center mx-auto">
+            <h3 class="display-4 mb-4">
+              Look at what we’ve done!
+            </h3>
+            <p class="mb-4 lead">Discover what clients were able to achieve with Reno.</p>
+            <a href="#gallery" class="btn-outline btn-sm me-auto">View project gallery</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- START THE BOTTOM CTA SECTION -->
+
+  <section class="py-5 bottom-cta" id="bottom-cta">
+    <div class="container py-5">
+      <div class="row g-3 g-xl-5">
+        <div class="col-md-12 col-lg-5 mb-5 mb-lg-0">
+          <h3 class="display-4 text-white">Let’s work on your project together!</h3>
+          <button class="btn-flat btn-flat-white btn-sm btn--show-modal" id="login-signup">Schedule a call</button>
+        </div>
+        <div class="col-md-12 col-lg-7 mt-auto">
+          <p class="bottom-cta__email display-3 text-white text-lg-end mb-0 mb-lg-5">hello@makeova.com</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- START THE FOOTER SECTION -->
+
+  <footer class="section footer py-5" id="footer">
+    <div class="container py-5">
+      <div class="row g-3 g-xl-5">
+        <div class="col-md-12 col-lg-3 d-flex align-items-start flex-column">
+          <p class="lead mb-lg-auto order-2 order-lg-1">We’re redefining what it means to renovate.</p>
+          <a href="#" class="footer__logo order-1 order-lg-2 mb-5 mb-lg-0">makeova</a>
+        </div>
+        <div class="col-md-12 col-lg-9">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="row g-3 g-xl-5">
+                <div class="col-md-12 col-lg-3 footer__col pb-1 pb-lg-0">
+                  <hr class="footer__col--headline">
+                  <p class="mt-4 mt-lg-0">Makeova simplifies the chaos and costs of construction by bringing design,
+                    sourcing, and vetted
+                    contractors all under one roof.</p>
+                  <p class="footer__col--copyright mb-auto">© Makeova 2022</p>
+
+                </div>
+                <div class="col-md-12 col-lg-3 footer__col pb-1 pb-lg-0">
+                  <hr class="footer__col--headline">
+                  <ul class="footer__col--links mt-5 mt-lg-0">
+                    <li><a href="#bathroom">Bathrooms</a></li>
+                    <li><a href="#kitchen">Kitchens</a></li>
+                    <li><a href="#backyard">Backyards</a></li>
+                    <li><a href="#basement">Basements</a></li>
+                    <li><a href="#process">How it works</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Guides</a></li>
+                  </ul>
+                </div>
+                <div class="col-md-12 col-lg-3 footer__col pb-1 pb-lg-0">
+                  <hr class="footer__col--headline">
+                  <ul class="footer__col--links mt-5 mt-lg-0">
+                    <li><a href="tel:+2347039291586">1 800 234 3432</a></li>
+                    <li><a href="mailto:sammy@sammyleths.com">hello@makeova.com</a></li>
+                  </ul>
+                </div>
+                <div class="col-md-12 col-lg-3 footer__col d-flex flex-column">
+                  <hr class="footer__col--headline">
+                  <ul class="footer__col--links tos mt-3 mt-lg-0 mb-lg-auto mb-5">
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                  </ul>
+                  <p class="footer__col--credit">Developed by <a class="fw-semibold" href="https://www.sammyleths.com"
+                      target="_blank">SammyLeths</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- START THE BACK TO TOP BUTTON -->
+
+  <a href="#" class="shadow back-to-top">
+    <i class="fas fa-chevron-up"></i>
+  </a>
+
+  <!-- START THE MODAL SECTION FOR LOGIN / SIGNUP -->
+
+  <div class="mb-modal mb-hidden login-signup" id="login-signup-id">
+    <button class="btn--close-modal" id="login-signup">&times;</button>
+    <h2 class="mb-modal__header text-center">
+      Login or Sign up to get started
+    </h2>
+    <div class="mb-modal__body">
+      <ul class="nav nav-tabs nav-fill" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="login-tab" data-bs-toggle="tab" data-bs-target="#login-tab-pane"
+            type="button" role="tab" aria-controls="login-tab-pane" aria-selected="true">Log in</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="signup-tab" data-bs-toggle="tab" data-bs-target="#signup-tab-pane" type="button"
+            role="tab" aria-controls="signup-tab-pane" aria-selected="false">Sign up</button>
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="login-tab-pane" role="tabpanel" aria-labelledby="login-tab"
+          tabindex="0">
+          <form action="#">
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+              <label for="floatingInput">Email address</label>
+            </div>
+            <div class="form-floating">
+              <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+              <label for="floatingPassword">Password</label>
+            </div>
+            <div class="form-floating d-grid">
+              <input class="btn-flat btn-sm mt-3" type="button" value="Log in">
+            </div>
+          </form>
+        </div>
+        <div class="tab-pane fade" id="signup-tab-pane" role="tabpanel" aria-labelledby="signup-tab" tabindex="0">
+          <form action="#">
+            <div class="row g-2">
+              <div class="col-md mb-2">
+                <div class="form-floating">
+                  <input type="text" class="form-control" id="floatingInputFirstname" placeholder="Sammy" value="">
+                  <label for="floatingInputFirstname">First name</label>
+                </div>
+              </div>
+              <div class="col-md mb-2">
+                <div class="form-floating">
+                  <input type="email" class="form-control" id="floatingInputEmail" placeholder="name@example.com"
+                    value="">
+                  <label for="floatingInputEmail">Email address</label>
+                </div>
+              </div>
+              <div class="col-md-12 mb-2">
+                <div class="form-floating">
+                  <input type="password" class="form-control" id="floatingPassword2" placeholder="Password">
+                  <label for="floatingPassword2">Password</label>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="form-floating d-grid">
+                  <input class="btn-flat btn-sm" type="button" value="Sign up">
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- START THE MODAL SECTION FOR GET YOUR ESTIMATE -->
+
+  <div class="mb-modal mb-hidden get-estimate" id="get-estimate-id">
+    <button class="btn--close-modal" id="get-estimate">&times;</button>
+    <h2 class="mb-modal__header text-center">
+      Request a FREE estimate today!
+    </h2>
+    <div class="mb-modal__body">
+      <form action="#">
+        <div class="row g-2">
+          <div class="col-md mb-2">
+            <div class="form-floating">
+              <input type="text" class="form-control" id="floatingInputFirstname3" placeholder="Sammy" value="">
+              <label for="floatingInputFirstname3">First name</label>
+            </div>
+          </div>
+          <div class="col-md mb-2">
+            <div class="form-floating">
+              <input type="email" class="form-control" id="floatingInputEmail3" placeholder="name@example.com" value="">
+              <label for="floatingInputEmail3">Email address</label>
+            </div>
+          </div>
+          <div class="col-md-12 mb-2">
+            <div class="form-floating">
+              <input type="password" class="form-control" id="floatingPassword3" placeholder="Password">
+              <label for="floatingPassword3">Password</label>
+            </div>
+          </div>
+          <div class="col-md-12 mb-2">
+            <div class="form-floating">
+              <select class="form-select" id="floatingSelectOption" aria-label="Floating label select example">
+                <option selected>Select option</option>
+                <option value="1">Bathroom</option>
+                <option value="2">Kitchen</option>
+                <option value="3">Backyard</option>
+                <option value="3">Basement</option>
+              </select>
+              <label for="floatingSelectOption">Interested option</label>
+            </div>
+          </div>
+          <div class="col-md-12 mb-2">
+            <div class="form-floating">
+              <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextareaMessage"></textarea>
+              <label for="floatingTextareaMessage">Additional comments</label>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="form-floating d-grid">
+              <input class="btn-flat btn-sm" type="button" value="Sign up">
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="overlay mb-hidden"></div>
+
+  <script src="assets/js/bootstrap.bundle.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+    integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"
+    async></script>
+  <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+  <script src="assets/js/custom.js"></script>
+
+  <!-- LIGHTBOX -->
+  <script type="text/javascript">
+    const lightboxGallery = GLightbox({
+      selector: '.glightbox1'
+    })
+
+    const lightbox = GLightbox({
+      'href': 'https://youtu.be/zFTbh21iIeY',
+      'type': 'video',
+      'source': 'youtube',
+      'width': 900,
+      'autoPlayVideos': 'true',
+    });
+  </script>
+</body>
+
+</html>

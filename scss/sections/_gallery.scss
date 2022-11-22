@@ -1,0 +1,147 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+.gallery {
+  padding-top: 5rem;
+
+  &__wrapper {
+    &__images {
+      height: 50rem;
+      overflow: hidden;
+
+      .scroller {
+        // XS DEVICES (575px down)
+        animation: infinite_vertical_scroll 20s infinite alternate linear both;
+
+        // SM DEVICES (576px up)
+        @include media-breakpoint-up(sm) {
+          animation: infinite_vertical_scroll_sm 20s infinite alternate linear
+            both;
+        }
+
+        // MD DEVICES (768px up)
+        @include media-breakpoint-up(md) {
+          animation: infinite_vertical_scroll_md 20s infinite alternate linear
+            both;
+        }
+
+        // LG DEVICES (992px up)
+        @include media-breakpoint-up(lg) {
+          animation: infinite_vertical_scroll_lg 20s infinite alternate linear
+            both;
+        }
+
+        // XL DEVICES (1200px up)
+        @include media-breakpoint-up(xl) {
+          animation: infinite_vertical_scroll_xl 20s infinite alternate linear
+            both;
+        }
+
+        // XXL DEVICES (1400px up)
+        @include media-breakpoint-up(xxl) {
+          animation: infinite_vertical_scroll_xxl 20s infinite alternate linear
+            both;
+        }
+      }
+
+      &__box {
+        position: relative;
+        max-height: 100%;
+        max-width: 100%;
+        overflow: hidden;
+
+        img {
+          width: 100%;
+        }
+
+        .gallery-box-info {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          opacity: 0;
+          visibility: hidden;
+
+          .caption {
+            text-align: center;
+            color: $white;
+            @include absoluteCenter;
+
+            a {
+              i {
+                font-size: 2rem;
+                color: $white;
+              }
+
+              &:hover {
+                opacity: 70%;
+              }
+            }
+          }
+        }
+
+        &:hover {
+          img {
+            transform: scale(1.2);
+            @include transitionProperty;
+          }
+
+          .gallery-box-info {
+            opacity: 1;
+            visibility: visible;
+            @include transitionProperty;
+          }
+        }
+      }
+
+      &:hover {
+        cursor: grab;
+
+        .scroller {
+          animation-play-state: paused;
+        }
+      }
+
+      &.active {
+        transform: scaleX(1.01);
+        cursor: grabbing;
+      }
+    }
+
+    &--controls {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+
+      .btn-flat {
+        padding: 0.5rem 1rem;
+        width: -moz-fit-content;
+        width: fit-content;
+        margin-bottom: 1rem;
+      }
+    }
+
+    &--cta {
+      height: 100%;
+      width: 60%;
+      flex-direction: column;
+
+      @include media-breakpoint-down(xl) {
+        width: 70%;
+      }
+
+      @include media-breakpoint-down(lg) {
+        padding-bottom: 4rem;
+      }
+
+      .display-4 {
+        font-weight: 500;
+      }
+
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,47 @@
+@use '../custom' as *;
+
+.bottom-cta {
+  @include media-breakpoint-down(sm) {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .display-4 {
+    font-weight: 500;
+    margin-bottom: 3rem;
+
+    @include media-breakpoint-down(xl) {
+      font-size: 3rem;
+    }
+
+    @include media-breakpoint-down(lg) {
+      font-size: 2.5rem;
+    }
+
+    @include media-breakpoint-down(md) {
+      font-size: 2rem;
+    }
+  }
+
+  &__email {
+    text-decoration: none;
+    font-weight: 100;
+    font-size: 3.5rem;
+
+    @include media-breakpoint-down(xl) {
+      font-size: 3rem;
+    }
+
+    @include media-breakpoint-down(lg) {
+      font-size: 2.5rem;
+    }
+
+    @include media-breakpoint-down(md) {
+      font-size: 2rem;
+    }
+
+    @include media-breakpoint-down(sm) {
+      font-size: 1.8rem;
+    }
+  }
+}

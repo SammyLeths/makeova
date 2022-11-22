@@ -1,0 +1,23 @@
+@use 'custom';
+
+// IMPORT THE COMPONENTS
+@use 'components/animations';
+@use 'components/buttons';
+@use 'components/general';
+@use 'components/mb-modal';
+@use 'components/mixins';
+@use 'components/options-card';
+@use 'components/process-card';
+@use 'components/typography';
+
+// IMPORT THE SECTIONS
+@use 'sections/navbar';
+@use 'sections/hero-section';
+@use 'sections/featured-in';
+@use 'sections/process';
+@use 'sections/testimonials';
+@use 'sections/middle-cta';
+@use 'sections/options';
+@use 'sections/gallery';
+@use 'sections/bottom-cta';
+@use 'sections/footer';

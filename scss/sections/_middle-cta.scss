@@ -1,0 +1,28 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+.middle-cta {
+  background-image: url('../../images/middle-cta/Background.png');
+  background-position: center;
+  background-size: cover;
+
+  &__wrapper {
+    height: 40rem;
+    width: 60%;
+    flex-direction: column;
+
+    @include media-breakpoint-down(xl) {
+      width: 80%;
+    }
+
+    @include media-breakpoint-down(sm) {
+      height: 30rem;
+      width: 80%;
+    }
+  }
+
+  .display-3 {
+    margin-bottom: 2rem;
+    font-weight: 500;
+  }
+}

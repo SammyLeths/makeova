@@ -1,0 +1,30 @@
+{
+  "name": "makeova",
+  "version": "1.0.0",
+  "description": "responsive web template built with html, bootstrap v5.2, sass and npm",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass --watch scss:assets/css"
+  },
+  "keywords": [
+    "frontend",
+    "development",
+    "responsive",
+    "website",
+    "template"
+  ],
+  "author": "SammyLeths",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.56.1"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.2.0",
+    "autoprefixer": "^10.4.13",
+    "bootstrap": "^5.2.2",
+    "bootstrap-icons": "^1.10.2",
+    "masonry-layout": "^4.2.2",
+    "postcss": "^8.4.19",
+    "postcss-cli": "^10.0.0"
+  }
+}

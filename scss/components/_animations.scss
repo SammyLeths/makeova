@@ -1,0 +1,86 @@
+@use '../custom' as *;
+
+// PULSE BORDER
+@keyframes pulse-border {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+
+// HERO IMAGE SLIDE TRANSITION
+@keyframes hero_image_slide {
+  from {
+    transform: translateY(-8rem);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0rem);
+    opacity: 1;
+  }
+}
+
+// XS DEVICES (575px down)
+@keyframes infinite_vertical_scroll {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-17rem);
+  }
+}
+
+// SM DEVICES (576px up)
+@keyframes infinite_vertical_scroll_sm {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-59rem);
+  }
+}
+
+// MD DEVICES (768px up)
+@keyframes infinite_vertical_scroll_md {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-95rem);
+  }
+}
+
+// LG DEVICES (992px up)
+@keyframes infinite_vertical_scroll_lg {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-47rem);
+  }
+}
+
+// XL DEVICES (1200px up)
+@keyframes infinite_vertical_scroll_xl {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-65rem);
+  }
+}
+
+// XXL DEVICES (1400px up)
+@keyframes infinite_vertical_scroll_xxl {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-83rem);
+  }
+}
