@@ -1,0 +1,9 @@
+@use '../custom' as *;
+
+.row-right {
+  min-height: 37.5rem;
+}
+
+.js-scroll-slider.is-scroll {
+  transition: transform 0.05s;
+}

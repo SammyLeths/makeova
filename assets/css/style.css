@@ -10791,54 +10791,6 @@ textarea.form-control-lg {
     opacity: 1;
   }
 }
-@keyframes infinite_vertical_scroll {
-  from {
-    transform: translateY(0);
-  }
-  to {
-    transform: translateY(-17rem);
-  }
-}
-@keyframes infinite_vertical_scroll_sm {
-  from {
-    transform: translateY(0);
-  }
-  to {
-    transform: translateY(-59rem);
-  }
-}
-@keyframes infinite_vertical_scroll_md {
-  from {
-    transform: translateY(0);
-  }
-  to {
-    transform: translateY(-95rem);
-  }
-}
-@keyframes infinite_vertical_scroll_lg {
-  from {
-    transform: translateY(0);
-  }
-  to {
-    transform: translateY(-47rem);
-  }
-}
-@keyframes infinite_vertical_scroll_xl {
-  from {
-    transform: translateY(0);
-  }
-  to {
-    transform: translateY(-65rem);
-  }
-}
-@keyframes infinite_vertical_scroll_xxl {
-  from {
-    transform: translateY(0);
-  }
-  to {
-    transform: translateY(-83rem);
-  }
-}
 .btn-flat {
   position: relative;
   padding: 1.5rem 2rem;
@@ -10880,6 +10832,14 @@ textarea.form-control-lg {
   height: 2rem;
   border-radius: 50%;
   border: none;
+}
+
+.row-right {
+  min-height: 37.5rem;
+}
+
+.js-scroll-slider.is-scroll {
+  transition: transform 0.05s;
 }
 
 .section {
@@ -11769,37 +11729,13 @@ textarea.form-control-lg {
   overflow: hidden;
 }
 .gallery__wrapper__images .scroller {
-  animation: infinite_vertical_scroll 20s infinite alternate linear both;
-}
-@media (min-width: 576px) {
-  .gallery__wrapper__images .scroller {
-    animation: infinite_vertical_scroll_sm 20s infinite alternate linear both;
-  }
-}
-@media (min-width: 768px) {
-  .gallery__wrapper__images .scroller {
-    animation: infinite_vertical_scroll_md 20s infinite alternate linear both;
-  }
-}
-@media (min-width: 992px) {
-  .gallery__wrapper__images .scroller {
-    animation: infinite_vertical_scroll_lg 20s infinite alternate linear both;
-  }
-}
-@media (min-width: 1200px) {
-  .gallery__wrapper__images .scroller {
-    animation: infinite_vertical_scroll_xl 20s infinite alternate linear both;
-  }
-}
-@media (min-width: 1400px) {
-  .gallery__wrapper__images .scroller {
-    animation: infinite_vertical_scroll_xxl 20s infinite alternate linear both;
-  }
+  height: 50rem;
 }
 .gallery__wrapper__images__box {
   position: relative;
   max-height: 100%;
   max-width: 100%;
+  margin-bottom: 2rem;
   overflow: hidden;
 }
 .gallery__wrapper__images__box img {
