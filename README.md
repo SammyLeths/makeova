@@ -12,7 +12,7 @@ Makeova is a modern responsive HTML5 landing page template suitable for use by h
   <li>Modals</li>
 </ul>
 
-This template was developed using Bootstrap5, Sass, Fontawesome, Bootstrap Icons, JavaScript, HTML5, GLightbox, NPM, Autoprefixer, PostCSS and Masonty layout.
+This template was developed using Bootstrap5, Sass, Fontawesome, Bootstrap Icons, JavaScript, HTML5, GLightbox, NPM, Autoprefixer, PostCSS and Masonry layout.
 
 <h2>Screenshots</h2>
 
