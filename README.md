@@ -80,7 +80,6 @@ This template was developed using Bootstrap5, Sass, Fontawesome, Bootstrap Icons
 
 <ul>
   <li><b><a href="https://codepen.io/yend24/pen/wvmwGZW" target="_blank">@Yend724</a></b>: Constant velocity slider</li>
-  <li><b><a href="https://www.udemy.com/course/complete-web-designer-mobile-designer-zero-to-mastery/" target="_blank">ZTM</a></b>: Complete Web & Mobile Designer in 2023</li>
 </ul>
 
 <h2>Author's Links</h2>
