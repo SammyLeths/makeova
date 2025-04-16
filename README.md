@@ -32,6 +32,7 @@ This template was developed using Bootstrap5, Sass, Fontawesome, Bootstrap Icons
 
 <ul>
   <li>Demo: <a href="https://makeova.netlify.app/" target="_blank">https://makeova.netlify.app/</a></li>
+  <li>Figma UI: <a href="https://bit.ly/makeova-ui" target="_blank">https://bit.ly/makeova-ui</a></li>
 </ul>
 
 <h2>Tech Stack</h2>
